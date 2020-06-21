@@ -1,0 +1,16 @@
+appInClusterNamespace: default
+
+clusterReplicas: 1
+
+placement:
+  multicluster:
+    enabled: true
+    main:
+      labelSelector:
+        matchLabels:
+          env: Dev
+    
+channel:
+  name: modresort-devchan
+  namespace: modresort-entitlement
+
